@@ -1,0 +1,12 @@
+<div class="row centered">
+			<div class="col-lg-8 col-lg-offset-2 w">
+				<h1>Oliver Thomsett</h1>
+			</div>
+		</div>
+		<div class="row centered">
+			<div class="col-lg-8 col-lg-offset-2 w tooltip-demo">
+				<% @icons.each do |icon| %>
+				<%= link_to icon.url, title: icon.title, target: "_blank" do %><i class="fa fa-<%= icon.icon %>"></i><% end %>
+				<% end %>
+			</div>
+		</div>
